@@ -1,0 +1,158 @@
+MongoDB shell version v4.4.1
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("a5513ecf-9cc7-441a-8f3d-e8006dc04c77") }
+MongoDB server version: 4.4.1
+---
+The server generated these startup warnings when booting:
+        2020-09-28T16:59:44.271+05:30: ***** SERVER RESTARTED *****
+        2020-09-28T16:59:57.157+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin               0.000GB
+config              0.000GB
+hospitalManagement  0.000GB
+local               0.000GB
+> use hospitalManagement
+switched to db hospitalManagement
+> show collections
+hospitalDetails
+ventilatorDetails
+> db.hospitalDetails.find().pretty()
+{
+        "_id" : ObjectId("5f759689e659cf69be6051f6"),
+        "hId" : "H1",
+        "name" : "Apollo hospital",
+        "location" : "17.398644, 78.484334",
+        "address" : "Plot No. 3-5-874/1 Near, Old MLA Quarters Rd, Hyderguda,Hyderabad,Telangana 500029",
+        "contactNo" : "040-23231380"
+}
+{
+        "_id" : ObjectId("5f75972fe659cf69be6051f7"),
+        "hId" : "H2",
+        "name" : "Medicover hospital",
+        "location" : "17.4468, 78.3796",
+        "address" : "Behind Cyber Towers, In the Lane of IBIS Hotels, HUDA Techno Enclave, HITEC City, Hyderabad, Telangana 500081",
+        "contactNo" : "040 6833 4455"
+}
+{
+        "_id" : ObjectId("5f759772e659cf69be6051f8"),
+        "hId" : "H3",
+        "name" : "Hegde hospital",
+        "location" : "17.4446, 78.3847",
+        "address" : "#67, 68, Vittal Rao Nagar, Madhapur, Hyderabad, Telangana 500081",
+        "contactNo" : "88807 47474"
+}
+{
+        "_id" : ObjectId("5f7597a8e659cf69be6051f9"),
+        "hId" : "H4",
+        "name" : "Care hospital",
+        "location" : "17.4126, 78.4503",
+        "address" : "Rd Number 1, Prem Nagar, Banjara Hills, Hyderabad, Telangana 500034",
+        "contactNo" : "040 6165 6565"
+}
+{
+        "_id" : ObjectId("5f7597cce659cf69be6051fa"),
+        "hId" : "H5",
+        "name" : "Kamineni hospital",
+        "location" : "17.3523, 78.5551",
+        "address" : "LB Nagar Road, Sarvodaya Colony, Central Bank Colony, L. B. Nagar, Hyderabad, Telangana 500074",
+        "contactNo" : "040 3987 9999"
+}
+{
+        "_id" : ObjectId("5f7597f0e659cf69be6051fb"),
+        "hId" : "H6",
+        "name" : "Yashoda hospital",
+        "location" : "17.3745, 78.4999",
+        "address" : "16-10-29, Nalgonda X Roads, Near New Market Metro station, Malakpet, Hyderabad, Telangana 500036",
+        "contactNo" : "040 4567 4567"
+}
+> db.ventilatorDetails.find().pretty()
+{
+        "_id" : ObjectId("5f7598dae659cf69be6051fc"),
+        "hId" : "H1",
+        "ventilatorId" : "H1V5",
+        "status" : "available",
+        "name" : "Apollo hospital"
+}
+{
+        "_id" : ObjectId("5f7598dae659cf69be6051fd"),
+        "hId" : "H2",
+        "ventilatorId" : "H2V9",
+        "status" : "available",
+        "name" : "Medicover hospital"
+}
+{
+        "_id" : ObjectId("5f7598dae659cf69be6051fe"),
+        "hId" : "H3",
+        "ventilatorId" : "H3V3",
+        "status" : "in-maintenance",
+        "name" : "Hegde hospital"
+}
+{
+        "_id" : ObjectId("5f7598dae659cf69be6051ff"),
+        "hId" : "H4",
+        "ventilatorId" : "H4V8",
+        "status" : "occupied",
+        "name" : "Care hospital"
+}
+{
+        "_id" : ObjectId("5f7598dae659cf69be605200"),
+        "hId" : "H5",
+        "ventilatorId" : "H5V1",
+        "status" : "in-maintenance",
+        "name" : "Kamineni hospital"
+}
+{
+        "_id" : ObjectId("5f7598dae659cf69be605201"),
+        "hId" : "H6",
+        "ventilatorId" : "H6V4",
+        "status" : "available",
+        "name" : "Yashoda hospital"
+}
+{
+        "_id" : ObjectId("5f76cff24ee79e3990afa27b"),
+        "hId" : "H1",
+        "ventilatorId" : "H1V6",
+        "status" : "available",
+        "name" : "Apollo hospital"
+}
+{
+        "_id" : ObjectId("5f76d0294ee79e3990afa27c"),
+        "hId" : "H2",
+        "ventilatorId" : "H2V8",
+        "status" : "in-maintenance",
+        "name" : "Medicover hospital"
+}
+{
+        "_id" : ObjectId("5f76d04c4ee79e3990afa27d"),
+        "hId" : "H3",
+        "ventilatorId" : "H3V4",
+        "status" : "occupied",
+        "name" : "Hegde hospital"
+}
+{
+        "_id" : ObjectId("5f76d0624ee79e3990afa27e"),
+        "hId" : "H4",
+        "ventilatorId" : "H4V7",
+        "status" : "in-maintenance",
+        "name" : "Care hospital"
+}
+{
+        "_id" : ObjectId("5f76d0714ee79e3990afa27f"),
+        "hId" : "H5",
+        "ventilatorId" : "H5V2",
+        "status" : "available",
+        "name" : "Kamineni hospital"
+}
+>

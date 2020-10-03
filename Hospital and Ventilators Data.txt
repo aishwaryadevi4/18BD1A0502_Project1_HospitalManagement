@@ -1,0 +1,122 @@
+{
+
+    "hId":"H1",
+    "name": "Apollo hospital",
+     "location":"17.398644, 78.484334",
+     "address": "Plot No. 3-5-874/1 Near, Old MLA Quarters Rd, Hyderguda,Hyderabad,Telangana 500029",
+    "contactNo": "040-23231380"
+
+}
+{
+
+    "hId":"H2",
+    "name": "Medicover hospital",
+     "location":"17.4468, 78.3796",
+     "address": "Behind Cyber Towers, In the Lane of IBIS Hotels, HUDA Techno Enclave, HITEC City, Hyderabad, Telangana 500081",
+    "contactNo": "040 6833 4455"
+
+}
+{
+
+    "hId":"H3",
+    "name": "Hegde hospital",
+     "location":"17.4446, 78.3847",
+     "address": "#67, 68, Vittal Rao Nagar, Madhapur, Hyderabad, Telangana 500081",
+    "contactNo": "88807 47474"
+
+}
+{
+
+    "hId":"H4",
+    "name": "Care hospital",
+     "location":"17.4126, 78.4503",
+     "address": "Rd Number 1, Prem Nagar, Banjara Hills, Hyderabad, Telangana 500034",
+    "contactNo": "040 6165 6565"
+
+}
+{
+
+    "hId":"H5",
+    "name": "Kamineni hospital",
+     "location":"17.3523, 78.5551",
+     "address": "LB Nagar Road, Sarvodaya Colony, Central Bank Colony, L. B. Nagar, Hyderabad, Telangana 500074",
+    "contactNo": "040 3987 9999"
+
+}
+{
+
+    "hId":"H6",
+    "name": "Yashoda hospital",
+     "location":"17.3745, 78.4999",
+     "address": "16-10-29, Nalgonda X Roads, Near New Market Metro station, Malakpet, Hyderabad, Telangana 500036",
+    "contactNo": "040 4567 4567"
+
+}
+-----------------------------------------------------------------------------------------------------------------------
+
+{
+       "hId" : "H1",
+        "ventilatorId" : "H1V5",
+        "status" : "occupied",
+        "name" : "Apollo hospital"
+}
+{
+       "hId" : "H1",
+        "ventilatorId" : "H1V6",
+        "status" : "available",
+        "name" : "Apollo hospital"
+}
+{
+       "hId" : "H2",
+        "ventilatorId" : "H2V9",
+        "status" : "available",
+        "name" : "Medicover hospital"
+}
+{
+       "hId" : "H2",
+        "ventilatorId" : "H2V8",
+        "status" : "in-maintenance",
+        "name" : "Medicover hospital"
+}
+{
+       "hId" : "H3",
+        "ventilatorId" : "H3V3",
+        "status" : "in-maintenance",
+        "name" : "Hegde hospital"
+}
+{
+       "hId" : "H3",
+        "ventilatorId" : "H3V4",
+        "status" : "occupied",
+        "name" : "Hegde hospital"
+}
+{
+       "hId" : "H4",
+        "ventilatorId" : "H4V8",
+        "status" : "occupied",
+        "name" : "Care hospital"
+}
+{
+       "hId" : "H4",
+        "ventilatorId" : "H4V7",
+        "status" : "in-maintenance",
+        "name" : "Care hospital"
+}
+{
+       "hId" : "H5",
+        "ventilatorId" : "H5V1",
+        "status" : "in-maintenance",
+        "name" : "Kamineni hospital"
+}
+{
+       "hId" : "H5",
+        "ventilatorId" : "H5V2",
+        "status" : "available",
+        "name" : "Kamineni hospital"
+}
+{
+       "hId" : "H6",
+        "ventilatorId" : "H6V4",
+        "status" : "available",
+        "name" : "Yashoda hospital"
+}
